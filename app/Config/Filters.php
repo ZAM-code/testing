@@ -9,7 +9,6 @@ use CodeIgniter\Filters\Honeypot;
 use App\Filters\Auth;
 use App\Filters\Loggedin;
 
-
 class Filters extends BaseConfig
 {
 	/**
