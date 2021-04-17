@@ -1,4 +1,4 @@
-const base_api = "http://localhost/e-comrece/public";
+const base_api = "https://zam-web-testing.herokuapp.com/public";
 var items = 0   
 cart_items();
 function cart_items(){
