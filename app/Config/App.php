@@ -24,7 +24,7 @@ class App extends BaseConfig
 	 * @var string
 	 */
 	// public $baseURL = 'http://localhost:8080/';
-	// public $baseURL = 'http://localhost/shopify/public';
+	// public $baseURL = 'http://localhost/testing/public';
 	public $baseURL = 'https://zam-web-testing.herokuapp.com/public';
 
 

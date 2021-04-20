@@ -23,20 +23,20 @@
 <?= $this->section('script') ?>
 $(document).ready(async function(){
   await $.ajax({
-  			url: base_api+"/home",
-  			type: 'GET',
-  			success: async function(data) {
-            await $.ajax({
             url: base_api+"/banner",
             type: 'GET',
             success: function(banner){
             $('main').html(banner);
           }
           })
-          	$('section').html(data);
+  await $.ajax({
+        url: base_api+"/home",
+        type: 'GET',
+        success:function(data) {
+            $('section').html(data);
           },
           error: function(error) {
-          $('main').html("<h1 class='alert alert-danger'> This Website is empty now please wait whenever some data will be added... </h1>");
+          $('section').html("<h1 class='alert'> This Website is empty now please wait whenever some data will be added... </h1>");
               }  
       });
   })

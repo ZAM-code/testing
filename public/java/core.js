@@ -1,4 +1,5 @@
 const base_api = "https://zam-web-testing.herokuapp.com/public";
+// const base_api = "http://localhost/testing/public";
 var items = 0   
 cart_items();
 function cart_items(){

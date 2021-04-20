@@ -32,21 +32,31 @@ class Customers extends BaseController
 	{
 		$base =  $this->base();
 
-		echo view('customers/index' , ['categories'=>$base['categories'] , 'profile'=> $base['profile']]);
+		// echo view('customers/index' , ['categories'=>$base['categories'] , 'profile'=> $base['profile']]);
+		echo view('customers/index' , ['categories'=>$base['categories']]);
+
 	}
 
 	public function home(){
+
 		$count =  $this->item->countAllResults();
 
 		$base =  $this->base();
 
-		$items = $this->item->get_all_items($count);
+		if ($count > 0) {
+			$items = $this->item->get_all_items($count);
 
-		$data = [
-			'items' => $items ,
-			'pager' =>  $this->item->pager
-		];
-		return view('customers/loaded_page/home' , ['categories'=>$base['categories'] ,'items'=>$data]);
+			$data = [
+				'items' => $items ,
+				'pager' =>  $this->item->pager
+			];
+			return view('customers/loaded_page/home' , ['categories'=>$base['categories'] ,'items'=>$data]);
+		}
+		else
+		{
+			$this->response->setStatusCode(400);
+		}
+		
 	}
 
 	public function banner(){
@@ -155,9 +165,9 @@ class Customers extends BaseController
 	public function base()
 	{
 		$categories = $this->category->find();
-		$prof = $this->profile->first();
+		// $prof = $this->profile->first();
 		$data = [
-			'profile' => $prof,
+			// 'profile' => $prof,
 			'categories' => $categories
 		]; 
 		return $data;			
