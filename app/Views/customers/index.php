@@ -23,13 +23,10 @@
 <?= $this->section('script') ?>
 $(document).ready(async function(){
   await $.ajax({
-  			async: true,
   			url: base_api+"/home",
   			type: 'GET',
   			success: async function(data) {
-       
             await $.ajax({
-            async: true,
             url: base_api+"/banner",
             type: 'GET',
             success: function(banner){
