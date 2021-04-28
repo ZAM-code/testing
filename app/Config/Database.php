@@ -33,9 +33,9 @@ class Database extends Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'remotemysql.com',
-		'username' => 'K7HCMxtILW',
-		'password' => 'kC8N7pJD4x',
-		'database' => 'K7HCMxtILW',
+		'username' => 'onUkTvYYBW',
+		'password' => 'gtczOydfqQ',
+		'database' => 'onUkTvYYBW',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,

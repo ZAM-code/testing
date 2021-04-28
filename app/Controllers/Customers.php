@@ -165,9 +165,9 @@ class Customers extends BaseController
 	public function base()
 	{
 		$categories = $this->category->find();
-		// $prof = $this->profile->first();
+		$prof = $this->profile->first();
 		$data = [
-			// 'profile' => $prof,
+			'profile' => $prof,
 			'categories' => $categories
 		]; 
 		return $data;			

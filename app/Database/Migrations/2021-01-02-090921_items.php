@@ -28,7 +28,7 @@ class Items extends Migration
                         'discount' => [
                                                                 'type'       => 'INT',
                                                                 'constraint' => 5,
-                                                                'null'       => true
+                                                                'null'       => false
                                                         ],
 			'description' => [
 								'type'       => 'TEXT',
