@@ -32,10 +32,10 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'sql6.freemysqlhosting.net',
-		'username' => 'sql6405563',
-		'password' => '7gZ5pMivYw',
-		'database' => 'sql6405563',
+		'hostname' => 'remotemysql.com',
+		'username' => 'K7HCMxtILW',
+		'password' => 'kC8N7pJD4x',
+		'database' => 'K7HCMxtILW',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -56,25 +56,25 @@ class Database extends Config
 	 *
 	 * @var array
 	 */
-	public $tests = [
-		'DSN'      => '',
-		'hostname' => '127.0.0.1',
-		'username' => '',
-		'password' => '',
-		'database' => ':memory:',
-		'DBDriver' => 'SQLite3',
-		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
-		'pConnect' => false,
-		'DBDebug'  => (ENVIRONMENT !== 'production'),
-		'charset'  => 'utf8',
-		'DBCollat' => 'utf8_general_ci',
-		'swapPre'  => '',
-		'encrypt'  => false,
-		'compress' => false,
-		'strictOn' => false,
-		'failover' => [],
-		'port'     => 3306,
-	];
+	// public $tests = [
+	// 	'DSN'      => '',
+	// 	'hostname' => '127.0.0.1',
+	// 	'username' => '',
+	// 	'password' => '',
+	// 	'database' => ':memory:',
+	// 	'DBDriver' => 'SQLite3',
+	// 	'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
+	// 	'pConnect' => false,
+	// 	'DBDebug'  => (ENVIRONMENT !== 'production'),
+	// 	'charset'  => 'utf8',
+	// 	'DBCollat' => 'utf8_general_ci',
+	// 	'swapPre'  => '',
+	// 	'encrypt'  => false,
+	// 	'compress' => false,
+	// 	'strictOn' => false,
+	// 	'failover' => [],
+	// 	'port'     => 3306,
+	// ];
 
 	//--------------------------------------------------------------------
 
