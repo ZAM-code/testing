@@ -144,7 +144,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text">discount</span>
           </div>
-          <input type="text" name="discount" id="discount" class="form-control" aria-label="Amount (to the nearest %)">
+          <input type="text" value="0" name="discount" id="discount" class="form-control" aria-label="Amount (to the nearest %)">
           <div class="input-group-append">
             <span class="input-group-text">%</span>
           </div>

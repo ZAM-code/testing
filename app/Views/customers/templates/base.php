@@ -59,7 +59,7 @@
  
     <header class="masthead mb-auto sticky-top  text-center">
           <div class="inner mx-auto">
-            <a href="<?= base_url();?>/"><img class="masthead-brand" id="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo"></a> 
+            <a href="<?= base_url();?>/"><img class="masthead-brand" id="logo-main" src="<?= base_url() ?>/uploads/logo/zam.png" width="200" alt="Logo Thing main logo"></a> 
             <nav class="nav nav-masthead justify-content-center mt-4 mt-lg-5 mb-5">
               <ul class="navbar-nav navbar-expand nav-fill">
                       <!-- <ul class="navbar-nav navbar-expand nav-fill sticky-top"> -->
